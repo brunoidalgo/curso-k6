@@ -60,4 +60,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Feito com 💜 &nbsp;por Fernando Papito 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/papitoio/)
+Feito por &nbsp;por Bruno Empke 👋 &nbsp;[Meu linkedin](https://www.linkedin.com/in/bruno-empke/)
