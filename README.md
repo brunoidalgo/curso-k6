@@ -40,18 +40,24 @@
 
 [Node.js](https://nodejs.org/) v16 ou superior para executar.
 
-Para liberar o gerenciador de pacotes Yarn:
-
-```
-corepack enable
-```
-
 Execute os comandos abaixo para instalar das dependências do projeto:
 
 ```sh
 cd curso-k6-basico/api
 yarn install
 yarn dev
+```
+
+Execute o comando abaixo para rodar o teste de perfomance com k6:
+
+```sh
+k6 run hello.js
+```
+
+Execute o comando abaixo para rodar o teste de perfomance com k6 simulando 10 usuários simultâneos por 30s:
+
+```sh
+k6 run --vus 10 --duration 30s hello.js
 ```
 
 ## 📝 License
