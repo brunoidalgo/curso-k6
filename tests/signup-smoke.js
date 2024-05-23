@@ -12,14 +12,15 @@ export function handleSummary(data) {
 }
 
 export const options = {
-  vus: 10,
-  duration: "10s",
+  vus: 1,
+  duration: "1m",
   thresholds: {
     http_req_duration: ['p(95)<2000'], // 95% Das reqs devem responder em até 2s
     http_req_failed: ['rate<0.01'] // Até 1% das requsisições podem ocorer erro
   }
 };
 
+//Smoke Test
 export default function () {
   const url = "http://localhost:3333/signup";
 

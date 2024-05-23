@@ -24,10 +24,10 @@
 
 ### Cadastro
 
-- [ ] O cadastro com sucesso deve ocorrer em até 2 segundos
-- [ ] Cadastros sem sucesso devem ocorrer em até 2 segundos
-- [ ] Deve poder cadastrar até 100 usuários simultâneos
-- [ ] A margem de erro no cadastro deve ser de pelo menos 1%
+- [X] O cadastro com sucesso deve ocorrer em até 2 segundos
+- [X] Cadastros sem sucesso devem ocorrer em até 2 segundos
+- [X] Deve poder cadastrar até 100 usuários simultâneos
+- [X] A margem de erro no cadastro deve ser de pelo menos 1%
 
 ## 🚀 Tecnologias
 
@@ -55,6 +55,14 @@ k6 run hello.js
 ```
 
 Execute o comando abaixo para rodar o teste de perfomance com k6 simulando 10 usuários simultâneos por 30s:
+
+```sh
+k6 run --vus 10 --duration 30s hello.js
+```
+
+Siga o passo a passo do [Link](https://github.com/benc-uk/k6-reporter) para poder importar a biblioteca de reporter que lhe permitirá gerar relatórios visuais em html para demonstrações.
+
+Execute o comando abaixo para rodar o teste de performance com report/relatório em Html
 
 ```sh
 k6 run --vus 10 --duration 30s hello.js
